@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="base_style.css" rel="stylesheet" type="text/css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="datetime">
+        <h2>date time</h2>
+        <button onclick="dateTime()">show</button>
+        <h3 class="hidden" id="dt"></h3>
+    </div>
+    <form action="#" method="POST" onsubmit="validasi(event)">
+        <div id="reg-info">
+            <div>
+                <label for="username">username:</label>
+                <input id="username" type="text" />
+            </div>
+            <div>
+                <label for="namalengkap">nama:</label>
+                <input id="namalengkap" type="text" />
+            </div>
+            <div>
+                <label for="alamat">alamat:</label>
+                <input id="alamat" type="text" />
+            </div>
+            <div>
+                <label for="email">email:</label>
+                <input id="email" type="email" />
+            </div>
+            <div>
+                <label for="password">password:</label>
+                <input id="password" type="text" />
+            </div>
+            <div style="display: block">
+                <label for="school">school:</label>
+                <textarea id="school"></textarea>
+            </div>
+        </div>
+        <input id="submit" type="submit" value="Register" />
+    </form>
+    <p id="demo"></p>
+    <a href="./string manipulation.html">f</a>
+    <a href="./gallery.html">f</a>
+</body>
+
+</html>
