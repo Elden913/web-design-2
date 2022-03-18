@@ -40,14 +40,21 @@ function validasi(e) {
     alert("thanks for filling in this form");
 }
 
+let scroll = () => {
+    let percentage = Math.ceil(window.scrollY) / (document.documentElement.scrollHeight-document.documentElement.clientHeight)
+    document.getElementById("myBar").style.width =  `${percentage*100}%`
+}
+
 function dateTime() {
     let datetime = new Date();
     let dt = document.getElementById("dt");
+    let dtbtn = document.getElementById("datetime-btn")
     dt.innerText = datetime;
     if (dt.style.display === "block") {
-        Math.round(Math.random())
+        dtbtn.innerText = "show"
         dt.style.display = "none";
     } else {
+        dtbtn.innerText = "hide"
         dt.style.display = "block";
     }
 }

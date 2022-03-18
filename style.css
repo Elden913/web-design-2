@@ -48,7 +48,7 @@ input[type="submit"]:hover {
     background: #5a5a5a;
 }
 body {
-    animation: background-animation 10000ms alternate infinite;
+    animation: background-animation 20000ms infinite;
 }
 textarea {
     margin-top: 0.25rem;
@@ -61,8 +61,11 @@ textarea {
     from {
         background: red;
     }
-    to {
+    50% {
         background: blue;
+    }
+    to {
+        background: red;
     }
 }
 .datetime {
@@ -82,4 +85,24 @@ textarea {
 }
 span {
     display: block;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+.progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+}
+html {
+  scroll-behavior: smooth;
 }
