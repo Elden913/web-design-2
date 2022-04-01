@@ -130,6 +130,7 @@ let changePageColor = () => {
 
     let color_picker = document.createElement("input")
     color_picker.type = "color"
+    color_picker.value = "#ff0000"
     if (document.body.dataset.realcolor) {
         color_picker.value = document.body.dataset.realcolor
         console.log(1)
