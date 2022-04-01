@@ -47,9 +47,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #5a5a5a;
 }
-body {
-    animation: background-animation 20000ms infinite;
-}
+
 textarea {
     margin-top: 0.25rem;
     margin-left: 0;
@@ -57,17 +55,6 @@ textarea {
     resize: none;
 }
 
-@keyframes background-animation {
-    from {
-        background: red;
-    }
-    50% {
-        background: blue;
-    }
-    to {
-        background: red;
-    }
-}
 .datetime {
     display: flex;
     flex-direction: column;
